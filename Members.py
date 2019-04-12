@@ -68,13 +68,13 @@ def Membership_list_log_write(membership_list_log):
 
 
 create_process_list()
-#print(process_status)
-#print(active_processes)
-#print(passive_processes)
+print(process_status)
+print(active_processes)
+print(passive_processes)
 size = len(active_processes)
 Membership_List(active_processes,passive_processes,size)
 print(Membership_list)
 WriteMembership_list(Membership_list)
 Membership_list_log(Membership_list,membership_list_log)
-print(membership_list_log)
+#print(membership_list_log)
 Membership_list_log_write(membership_list_log)
