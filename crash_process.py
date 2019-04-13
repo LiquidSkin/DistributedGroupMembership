@@ -1,5 +1,6 @@
 from Members import process_status
 import time
+import json
 
 
 
@@ -39,3 +40,9 @@ for i in range(n):
 
 
 print(process_status)
+
+with open('crashed_processes.json', 'w') as fp:
+    json.dump(process_status, fp)
+
+
+
